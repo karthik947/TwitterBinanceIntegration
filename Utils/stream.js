@@ -52,9 +52,6 @@ let stream = {
       ].filter((d) => d).length
     );
     if (isReply) return;
-    // if (tweet.user.screen_name === 'Karthik82167867') {
-    //   console.log(tweet.user.screen_name);
-    // }
     const { extended_tweet, text } = tweet;
     const { screen_name: tuname } = tweet.user;
     const tweetText = extended_tweet ? extended_tweet?.full_text : text;
